@@ -15,6 +15,7 @@
 
     /* colors */
     --colors-text-light: #FFFFFF;
+    --colors-text-middle: #ADADAD;
     --colors-text-dark: #000000;
     --colors-text-orange: #FCB500;
 
@@ -42,4 +43,54 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.text-orange {
+    color: var(--colors-text-orange);
+}
+
+@media (max-width: 1200px) {
+    :root{
+        --fs-lg: 133px;
+        --fs-lmd: 45px;
+        --fs-md: 33px;
+        --fs-sm: 17px;
+    }
+}
+
+@media (max-width: 1050px) {
+    :root{
+        --fs-lg: 100px;
+        --fs-lmd: 35px;
+        --fs-md: 28px;
+        --fs-xmd: 22px;
+    }
+}
+
+@media (max-width: 883px) {
+    :root{
+        --fs-lg: 75px;
+        --fs-lmd: 32px;
+        --fs-md: 24px;
+        --fs-xmd: 20px;
+    }
+}
+
+@media (max-width: 730px) {
+    :root{
+        --fs-lg: 55px;
+        --fs-lmd: 32px;
+        --fs-md: 24px;
+        --fs-xmd: 20px;
+    }
+}
+
+@media (max-width: 520px) {
+    :root{
+        --fs-lg: 35px;
+        --fs-lmd: 25px;
+        --fs-md: 21px;
+        --fs-xmd: 18px;
+        --fs-sm: 16px;
+    }
 }

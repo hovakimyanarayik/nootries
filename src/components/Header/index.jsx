@@ -12,11 +12,9 @@ const Header = () => {
     return ( 
         <div className="header-wrapper">
             <Wrapper>
-                <div>
-                    <PageTitle />
-                    <Description />
-                    <Extantion />
-                </div>
+                <PageTitle />
+                <Description />
+                <Extantion />
                 <MaskGroup />
             </Wrapper>
         </div>

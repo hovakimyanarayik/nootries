@@ -1,15 +1,17 @@
 nav {
     padding: 24px 0;
-    /* position: fixed;
+    position: fixed;
     top: 0;
     left: 0;
-    right: 0; */
+    right: 0;
     z-index: 100;
+    background-color: var(--colors-bg-dark);
 }
 
 .nav-items-list {
     list-style: none;
     flex-wrap: wrap;
+    justify-content: center !important;
 }
 
 .nav-items-list li {
@@ -32,6 +34,7 @@ nav {
     border: none;
     position: relative;
     cursor: pointer;
+    padding: 0 5px;
 }
 
 .basket-button:before {
@@ -41,12 +44,49 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 13px;
-    width: 13px;
+    height: 15px;
+    width: 15px;
     border-radius: 50%;
     position: absolute;
-    left: 12px;
-    top: 12px;
+    left: 24px;
+    top: 24px;
     z-index: 1;
     color: var(--colors-text-dark);
+}
+
+.menu-button {
+    background-color: var(--colors-bg-dark);
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* .vertical-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+@media (max-width: 1200px) {
+    .nav-items-list li {
+        margin-right: 30px;
     }
+}
+
+@media (max-width: 1024px) {
+    .nav-items-list li {
+        margin-right: 40px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 550px) {
+    .nav-items-list {
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+    .nav-items-list li {
+        margin: 5px 0;
+    }
+}

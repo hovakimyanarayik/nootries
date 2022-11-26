@@ -1,5 +1,5 @@
 import React from 'react';
-import LogoSvg from '../../../images/SVG/logo.svg'
+import LogoSvg from '../../../images/LOGO/logo.svg'
 
 const Logo = () => {
 
