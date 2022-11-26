@@ -1,0 +1,70 @@
+.header-wrapper {
+    background-image: url('../../images/BG/bg.png');
+    background-size: contain;
+    background-position: center;
+    padding: 80px 0;
+    /* margin-top: 80px; */
+
+
+
+    position: relative;
+}
+
+
+.page-title {
+    font-size: var(--fs-lg);
+    text-transform: uppercase;
+    font-weight: var(--fw-bold);
+}
+
+.header-description {
+    font-size: var(--fs-xmd);
+    color: var(--colors-text-dark);
+    max-width: 670px;
+    margin-top: 25px;
+}
+
+.extantion-wrapper {
+    margin-top: 120px;
+    max-width: 420px;
+}
+
+.extantion-head {
+    font-size: var(--fs-md);
+    font-weight: var(--fw-bold);
+    color: var(--colors-text-dark);
+}
+
+.extantion-content {
+    color: var(--colors-text-dark);
+}
+
+
+.mask-group {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.mask-group-lemon {
+    position: absolute;
+    right: 200px;
+    bottom: -120px;
+    z-index: 4;
+}
+
+.mask-group-nootris {
+    position: absolute;
+    right: 130px;
+    bottom: 80px;
+    z-index: 3;
+}
+
+.mask-group-ginger {
+    position: absolute;
+    right: 40px;
+    bottom: 100px;
+    z-index: 0;
+}
